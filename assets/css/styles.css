@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+/* || VARIABLES */
+
+:root {
+	/* COLORS */
+	--TURQUOISE: turquoise;
+	--PURPLE: orchid;
+	--WHITE: whitesmoke;
+	--BG-BLACK: #333;
+
+	/* FONT */
+	--FONT: "Roboto Mono", monospace;
+}
+
+::selection {
+	background-color: var(--TURQUOISE);
+	color: var(--BG-BLACK);
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: var(--FONT);
+
+	font-size: 1.75rem;
+	line-height: 1.5;
+	color: var(--WHITE);
+
+	background-color: var(--BG-BLACK);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.625rem;
+	color: var(--PURPLE);
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+h1 {
+	font-size: 4rem;
+}
+h2 {
+	font-size: 3.5rem;
+}
+h3 {
+	font-size: 3rem;
+}
+h4 {
+	font-size: 2.5rem;
+}
+h5 {
+	font-size: 2rem;
+}
+h6 {
+	font-size: 1.5rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+header {
+	width: 96%;
+	margin: 0 auto;
+	padding: 2.5rem;
+	text-align: center;
+}
+
+header h1.page-title {
+	padding: 1rem 1.2rem;
+	font-size: 4.5rem;
+}
+
+main {
+	width: 96%;
+	margin: 2rem auto;
+}
+
+footer {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+/* ?------------------------- */
+/* .snippet__section {
+	border: 2px solid red;
+	display: grid;
+	justify-content: space-evenly;
+	align-content: center;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"snippet1 snippet2 snippet3"
+		"snippet4 snippet5 snippet6";
+
+	margin-top: 3rem;
+}
+
+.snippet-1 {
+	grid-area: snippet1;
+}
+.snippet-2 {
+	grid-area: snippet2;
+}
+.snippet-3 {
+	grid-area: snippet3;
+}
+.snippet-4 {
+	grid-area: snippet4;
+}
+.snippet-5 {
+	grid-area: snippet5;
+}
+.snippet-6 {
+	grid-area: snippet6;
+} */
+/* ?------------------------- */
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.card-column {
+	flex: 1 0 100%;
+	padding: 1.5rem;
+	transition: flex-basis 500ms linear;
+	margin-bottom: 1.5rem;
+}
+
+.code-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 100%;
+	padding: 2rem;
+	color: var(--PURPLE);
+
+	border-radius: 0.5rem;
+	border: 2px dashed var(--WHITE);
+	/* outline: 2px dashed var(--WHITE); */
+	/* outline-offset: -2px; */
+	transition: all 0.5s ease-in-out;
+}
+
+.code-card .card-header {
+	position: relative;
+	margin: -4rem 0 1.5rem 0;
+	padding: 0.5rem 1rem;
+	background-color: var(--BG-BLACK);
+	color: var(--PURPLE);
+	border: 0.2rem solid var(--WHITE);
+	border-radius: 0.8rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+	box-shadow: inset 0px 0px 8px var(--PURPLE), 0 0 15px var(--PURPLE);
+}
+
+.code-card .code-block {
+	flex-grow: 1;
+}
+
+.code-card pre {
+	white-space: pre-wrap;
+	overflow: auto;
+	tab-size: 4;
+	padding: 1.2rem 1rem;
+	color: var(--WHITE);
+	border-radius: 0.8rem;
+	background-image: linear-gradient(
+		rgba(232, 102, 236, 0.3) 0%,
+		rgba(232, 102, 236, 0.6) 100%
+	);
+	display: flex;
+	align-items: center;
+}
+
+.code-card pre:active {
+	user-select: all;
+}
+
+@media screen and (min-width: 768px) {
+	.card-column {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.card-column:last-child {
+		flex-grow: 1;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	header {
+		width: 75%;
+	}
+
+	.card-column {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
+}
+
+/* @media screen and (max-width: 1200px) {
+	.snippet__section {
+		justify-content: space-evenly;
+		grid-template-columns: auto auto;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas:
+			"snippet1 snippet2"
+			"snippet3 snippet4"
+			"snippet5 snippet6";
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.snippet__section {
+		justify-content: space-evenly;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto auto auto;
+		grid-template-areas:
+			"snippet1"
+			"snippet2"
+			"snippet3"
+			"snippet4"
+			"snippet5"
+			"snippet6";
+	}
+} */
