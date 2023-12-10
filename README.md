@@ -9,4 +9,4 @@
 ### - The snippet will automatically be highlighted for you to copy
 ### - Copy & Enjoy
 
-![Project Demo](../CSS-Cheatsheet/assets/images/CSS-Cheatsheet-demo.png)
+![Project Demo](./assets/images/CSS-Cheatsheet-demo.png)
