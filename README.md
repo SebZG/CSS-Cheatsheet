@@ -1,8 +1,8 @@
 # CSS Snippet Cheatsheet
 
-## A Cheatsheet for your favourite CSS Codes.
+### A Cheatsheet for your favourite CSS Codes.
 
-### [**Link to Project**](sebzg.github.io/CSS-Cheatsheet/)
+[**Link to Project**](sebzg.github.io/CSS-Cheatsheet/)
 
 ## Usage
 - Click on a snippet you want to copy
